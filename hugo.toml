@@ -1,0 +1,73 @@
+baseURL = 'https://lnxsantos.github.io/blogger/'
+languageCode = 'pt-br'
+title = 'Luan Santos'
+theme = 'tech-blog-theme'
+
+# Configurações de produção
+[params]
+  author = "Luan Santos"
+  description = "Diário técnico sobre OSINT aplicado a blockchain, rastreamento de transações e segurança ofensiva no ecossistema cripto"
+  github = "https://github.com/lnxsantos"
+  
+  # Open Graph e Social Media
+  # Imagem padrão para compartilhamento (1200x630px recomendado)
+  og_image = "/images/og-default.png"
+  
+  # Twitter
+  twitter_site = "@seu-usuario"  # Seu @ do Twitter (sem @)
+  twitter_creator = "@seu-usuario"  # Seu @ do Twitter para posts
+
+# Configurações de menu
+[[menu.main]]
+  identifier = "home"
+  name = "Home"
+  url = "/"
+  weight = 1
+
+[[menu.main]]
+  identifier = "articles"
+  name = "Articles"
+  url = "/posts/"
+  weight = 2
+
+[[menu.main]]
+  identifier = "books"
+  name = "Books"
+  url = "/books/"
+  weight = 3
+
+[[menu.main]]
+  identifier = "lab"
+  name = "Lab"
+  url = "/lab/"
+  weight = 4
+
+# Configurações de taxonomia
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+
+# Configurações de markdown
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true  # Permite HTML no markdown
+  [markup.highlight]
+    style = "github"
+    lineNos = true
+    lineNumbersInTable = true
+    noClasses = false
+
+# Configurações de resumo (summary)
+[summary]
+  length = 150  # Limita o resumo automático a 150 caracteres
+
+# Configurações de paginação
+[pagination]
+  pagerSize = 10
+
+# Configurações de output
+[outputs]
+  home = ["HTML", "RSS"]
+  page = ["HTML"]
+

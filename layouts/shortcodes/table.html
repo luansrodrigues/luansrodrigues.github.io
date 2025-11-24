@@ -1,0 +1,6 @@
+{{ $content := .Inner | markdownify }}
+{{ $content = $content | replaceRE `<table>` `<table class="content-table">` }}
+<div class="table-wrapper">
+    {{ $content | safeHTML }}
+</div>
+
