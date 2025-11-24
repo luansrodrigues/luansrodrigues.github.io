@@ -22,7 +22,7 @@
 
     <h1 class="articles-title">Últimos Posts</h1>
     <div class="articles-list">
-        {{ range where .Site.RegularPages "Section" "posts" }}
+        {{ range where (where .Site.RegularPages "Section" "posts") ".Draft" false }}
         <div class="article-item">
             <time datetime="{{ .Date.Format "2006-01-02" }}" class="article-date">{{ .Date.Format "2006-01-02" }}</time>
             <a href="{{ .Permalink }}" class="article-link" itemprop="url">
