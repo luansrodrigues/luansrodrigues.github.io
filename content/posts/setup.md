@@ -1,7 +1,7 @@
 ---
 title: "Meu laboratório de estudos em cibersegurança: ThinkPad X230, Fedora e a importância de documentar"
 date: 2025-11-23
-draft: false
+draft: true
 categories:
   - "Cybersecurity"
   - "Forensics"
