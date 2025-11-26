@@ -1,13 +1,13 @@
-baseURL = 'https://lnxsantos.github.io/'
+baseURL = 'https://luansantosme.github.io/'
 languageCode = 'pt-br'
-title = 'lnxsantos'
+title = 'luansantosme'
 # theme removed - using layouts from root
 
 # Configurações de produção
 [params]
   author = "Luan Santos"
   description = "Documentação técnica de análise forense, OSINT e investigação digital. Procedimentos, metodologias e resultados de investigações."
-  github = "https://github.com/lnxsantos"
+  github = "https://github.com/luansantosme"
   
   # Open Graph e Social Media
   # Imagem padrão para compartilhamento (1200x630px recomendado)
@@ -82,7 +82,7 @@ title = 'lnxsantos'
     # 2. Configure com seu repositório GitHub
     # 3. Habilite Discussions no repositório (Settings > General > Features > Discussions)
     # 4. Copie o repoId e categoryId gerados
-    repo = "lnxsantos/lnxsantos.github.io"  # Repositório onde os comentários serão armazenados
+    repo = "luansantosme/luansantosme.github.io"  # Repositório onde os comentários serão armazenados
     repoId = ""  # Obtenha em https://giscus.app após configurar
     category = "Announcements"  # Categoria padrão para discussões
     categoryId = ""  # Obtenha em https://giscus.app após configurar
